@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footer mt-5">
         <div class="row">
             <div class="col-sm-4 d-flex flex-column justify-content-between">
                 <svg width="186" height="44" viewBox="0 0 186 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,17 +105,22 @@
 
     & input {
         border-radius: 0.5rem;
-        opacity: 0.2;
-        background: var(--default-white, #FFF);
+        background: #663494;
         width: 15.9375rem;
         height: 2.5rem;
         flex-shrink: 0;
-        color: var(--text-gray-300, #D9DBE1);
+        color: white;
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.25rem;
         margin-top: 1.5rem;
         padding-left: 0.75rem;
+        outline: none;
+        border: none
+    }
+
+    & ::placeholder {
+        color: white;
     }
 
     & .sendBtn {

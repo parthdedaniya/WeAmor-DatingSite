@@ -19,9 +19,11 @@
             <img src="../assets/headerImg.svg" class="headerImage" alt="">
         </div>
     </div>
+    <AllMembers />
 </template>
 
 <script setup>
+import AllMembers from '../components/AllMembers.vue';
 </script>
 
 <style lang="scss" scoped>

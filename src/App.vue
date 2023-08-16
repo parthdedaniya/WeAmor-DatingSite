@@ -6,7 +6,11 @@ import Footer from './components/Footer.vue';
 
 <template>
   <NavBar />
-  <RouterView />
+  <Suspense>
+    <RouterView v-slot="{ Component }">
+      <component :is="Component"></component>
+    </RouterView>
+  </Suspense>
   <Footer />
 </template>
 
