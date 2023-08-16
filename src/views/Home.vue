@@ -1,6 +1,6 @@
 <template>
-    <div class="header d-flex justify-content-between">
-        <div class="headerContent ps-5">
+    <div class="header row m-0">
+        <div class="col-sm-6 headerContent ps-5">
             <div class="greet">WELCOME..!</div>
             <div class="message">Let’s Meeting New
                 People Around You.!!</div>
@@ -15,7 +15,7 @@
                 Login with Phone
             </button>
         </div>
-        <div>
+        <div class="col-sm-6 d-flex align-items-center">
             <img src="../assets/headerImg.svg" class="headerImage" alt="">
         </div>
     </div>
@@ -32,6 +32,10 @@ import AllMembers from '../components/AllMembers.vue';
     background-color: #EBD6FF;
     background-size: cover;
     background-repeat: no-repeat;
+
+    & .headerImage {
+        width: 100%;
+    }
 }
 
 .headerContent {
@@ -53,6 +57,7 @@ import AllMembers from '../components/AllMembers.vue';
     & .subMsg {
         color: #2E2E2E;
         font-size: 1rem;
+        line-height: 2;
         font-weight: 400;
     }
 }
@@ -69,7 +74,17 @@ import AllMembers from '../components/AllMembers.vue';
     line-height: 1.125rem;
 }
 
-.headerImage {
-    margin-top: 2.5rem;
+@media(max-width:576px) {
+    .headerContent {
+        padding-top: 5rem;
+    }
+
+    .message {
+        width: 100% !important;
+    }
+
+    .headerImage {
+        display: none;
+    }
 }
 </style>
