@@ -12,6 +12,7 @@ Welcome to the Dating Site Demo! This repository contains a simple dating site s
 ## Demo
 
 This is a demo site, so only a limited set of features has been implemented. It's intended to showcase the basic functionality of a dating site.
+I've deployed the site on netlify which you can find here: https://we-amor-dating-site.netlify.app/
 
 ## Technologies Used
 
