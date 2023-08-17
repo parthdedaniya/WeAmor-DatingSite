@@ -1,14 +1,22 @@
-# WeAmor
+# WeAmor - Dating Site Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to the Dating Site Demo! This repository contains a simple dating site showcasing some basic features. The site allows users to explore registered members, search by name, view personal profiles, and mark members as favorites.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- View Registered Members: Users can see a list of all registered members on the app.
+- Search by Name: Users can search for specific members by their names.
+- Personal Profile Pages: Clicking on a member card leads to their personal profile page, where users can learn more about them.
+- Favorite Members: Users can mark members as favorites or unfavorite them by clicking the favorite button.
 
-## Customize configuration
+## Demo
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This is a demo site, so only a limited set of features has been implemented. It's intended to showcase the basic functionality of a dating site.
+
+## Technologies Used
+
+- Vue.js 3: Frontend framework for building user interfaces.
+- Firebase Firestore: Cloud-based NoSQL database for storing user data.
 
 ## Project Setup
 
