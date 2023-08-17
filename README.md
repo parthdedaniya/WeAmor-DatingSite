@@ -18,6 +18,21 @@ This is a demo site, so only a limited set of features has been implemented. It'
 - Vue.js 3: Frontend framework for building user interfaces.
 - Firebase Firestore: Cloud-based NoSQL database for storing user data.
 
+## Environment Variables and Firebase Configuration
+
+To securely manage sensitive configuration details, such as your Firebase setup, this project uses environment variables provided by Vite. The `.env` file at the root of the project stores these variables. The variables are accessed using `import.meta.env.VITE_VARIABLE_NAME` in your Vue components.
+
+To configure Firebase, make sure to set the following environment variables in your `.env` file:
+
+```plaintext
+VITE_FIREBASE_API_KEY=your-api-key
+VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+VITE_FIREBASE_APP_ID=your-app-id
+```
+
 ## Project Setup
 
 ```sh
