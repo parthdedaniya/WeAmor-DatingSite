@@ -85,77 +85,20 @@
                 <div class="imgActions">
                     <img class="userImg w-100" :src=userStore.currUser.image alt="" />
                     <div class="actions">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_12_4486)">
-                                <circle cx="20" cy="18" r="15.5" fill="#A25CE1" stroke="white" />
-                                <path
-                                    d="M20 10.5L22.3175 15.195L27.5 15.9525L23.75 19.605L24.635 24.765L20 22.3275L15.365 24.765L16.25 19.605L12.5 15.9525L17.6825 15.195L20 10.5Z"
-                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_12_4486" x="0" y="0" width="40" height="40"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset dy="2" />
-                                    <feGaussianBlur stdDeviation="2" />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_4486" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_4486"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                            <g filter="url(#filter0_d_12_4490)">
-                                <circle cx="27" cy="25" r="23" fill="white" />
-                                <circle cx="27" cy="25" r="22.5" stroke="#8530D1" />
-                            </g>
-                            <path
-                                d="M37.1494 18.8566C36.5629 18.268 35.8667 17.8011 35.1003 17.4825C34.334 17.164 33.5126 17 32.6831 17C31.8535 17 31.0321 17.164 30.2658 17.4825C29.4994 17.8011 28.8032 18.268 28.2167 18.8566L26.9997 20.0775L25.7826 18.8566C24.5981 17.6682 22.9915 17.0006 21.3163 17.0006C19.6411 17.0006 18.0346 17.6682 16.85 18.8566C15.6655 20.0449 15 21.6566 15 23.3372C15 25.0177 15.6655 26.6295 16.85 27.8178L18.0671 29.0387L26.9997 38L35.9323 29.0387L37.1494 27.8178C37.7361 27.2295 38.2015 26.531 38.519 25.7622C38.8366 24.9934 39 24.1694 39 23.3372C39 22.505 38.8366 21.681 38.519 20.9122C38.2015 20.1434 37.7361 19.4449 37.1494 18.8566Z"
-                                stroke="#8530D1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <defs>
-                                <filter id="filter0_d_12_4490" x="0" y="0" width="54" height="54"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset dy="2" />
-                                    <feGaussianBlur stdDeviation="2" />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_4490" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_4490"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_12_4493)">
-                                <circle cx="20" cy="18" r="15.5" fill="#666666" stroke="white" />
-                                <path d="M24.5 13.5L15.5 22.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M15.5 13.5L24.5 22.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                                <filter id="filter0_d_12_4493" x="0" y="0" width="40" height="40"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset dy="2" />
-                                    <feGaussianBlur stdDeviation="2" />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_4493" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_4493"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
+                        <button class="star">
+                            <img src="../assets/star.svg" alt="" />
+                        </button>
+                        <button class="favorite" @click="toggleFavoriteBtn">
+                            <template v-if="isFavorite">
+                                <img src="../assets/favoriteTrue.svg" alt="" />
+                            </template>
+                            <template v-else>
+                                <img src="../assets/favoriteFalse.svg" alt="" />
+                            </template>
+                        </button>
+                        <button class="cancel">
+                            <img src="../assets/cancel.svg" alt="" />
+                        </button>
                     </div>
                 </div>
                 <div class="message largeScreen">
@@ -177,17 +120,29 @@
 
 <script setup>
 import { useUserStore } from '../stores/userStore';
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { doc, updateDoc, getDoc, collection, query, where, getDocs } from "firebase/firestore";
 import { useRoute } from "vue-router"
 import { db } from "@/firebase.js"
+import { ref } from 'vue';
+import { useToggleFavorite } from "../composables/useToggleFavorite"
 
 const userStore = useUserStore()
 const route = useRoute()
+const { toggleFavorite } = useToggleFavorite()
+
 const q = query(collection(db, "users"), where("id", "==", route.params.id));
 const querySnapshot = await getDocs(q);
 querySnapshot.forEach((doc) => {
-    userStore.currUser = doc.data()
+    userStore.currUser = { uid: doc.id, ...doc.data() }
 });
+
+const userRef = doc(db, "users", userStore.currUser.uid)
+const user = await getDoc(userRef)
+let isFavorite = ref(user.data().favorite)
+
+const toggleFavoriteBtn = async () => {
+    isFavorite.value = await toggleFavorite(userRef)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -362,6 +317,30 @@ querySnapshot.forEach((doc) => {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.star,
+.cancel {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    background: #A25CE1;
+}
+
+.favorite {
+    border: none;
+    background: none;
+}
+
+.cancel {
+    background: #666;
 }
 
 .message {

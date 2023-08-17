@@ -5,8 +5,8 @@
             <button class="star">
                 <img src="../assets/star.svg" alt="" />
             </button>
-            <button class="favorite" @click="toggleFavorite">
-                <template v-if="member.favorite">
+            <button class="favorite" @click="toggleFavoriteBtn">
+                <template v-if="isFavorite">
                     <img src="../assets/favoriteTrue.svg" alt="" />
                 </template>
                 <template v-else>
@@ -30,13 +30,23 @@
 </template>
 
 <script setup>
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from "@/firebase.js"
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
+import { useToggleFavorite } from "../composables/useToggleFavorite"
 
 const props = defineProps(["member"])
 const router = useRouter()
+const { toggleFavorite } = useToggleFavorite()
 
-const toggleFavorite = () => { }
+const userRef = doc(db, "users", props.member.uid)
+const user = await getDoc(userRef)
+let isFavorite = ref(user.data().favorite)
 
+const toggleFavoriteBtn = async () => {
+    isFavorite.value = await toggleFavorite(userRef)
+}
 </script>
 
 <style lang="scss" scoped>

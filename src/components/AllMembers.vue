@@ -56,7 +56,7 @@ const loadStartingMembers = async () => {
     let q = query(collection(db, "users"), limit(5));
     let querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-        userStore.users.push(doc.data())
+        userStore.users.push({ uid: doc.id, ...doc.data() })
     });
     startingMembers = userStore.users;
 }
@@ -70,7 +70,7 @@ const searchByName = async () => {
         const querySnapshot = await getDocs(q);
         userStore.users = [];
         querySnapshot.forEach((doc) => {
-            userStore.users.push(doc.data())
+            userStore.users.push({ uid: doc.id, ...doc.data() })
         });
         hideBtn(viewAllMemberSection)
     } else {
@@ -83,7 +83,7 @@ const loadAllMembers = async () => {
     userStore.users = [];
     let querySnapshot = await getDocs(collection(db, "users"));
     querySnapshot.forEach((doc) => {
-        userStore.users.push(doc.data())
+        userStore.users.push({ uid: doc.id, ...doc.data() })
     });
     hideBtn(viewAllMemberSection)
 }
